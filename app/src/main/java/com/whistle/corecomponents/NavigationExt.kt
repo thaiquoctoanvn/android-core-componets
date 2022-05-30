@@ -2,6 +2,7 @@ package com.whistle.corecomponents
 
 import android.content.Intent
 import android.util.SparseArray
+import android.view.MenuItem
 import androidx.core.util.forEach
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.LiveData
@@ -14,7 +15,8 @@ fun BottomNavigationView.setUpWithNavController(
     navGraphIds: List<Int>,
     fragmentManager: FragmentManager,
     containerId: Int,
-    intent: Intent
+    intent: Intent,
+    onNavMenuClickListener: ((MenuItem) -> Unit)? = null
 ): LiveData<NavController> {
     val graphIdToTagMap = SparseArray<String>()
     val selectedNavController = MutableLiveData<NavController>()
@@ -50,6 +52,7 @@ fun BottomNavigationView.setUpWithNavController(
     var isOnFirstFragment = selectedItemTag == firstFragmentTag
 
     setOnItemSelectedListener {
+        onNavMenuClickListener?.invoke(it)
         if(fragmentManager.isStateSaved) {
             false
         } else {

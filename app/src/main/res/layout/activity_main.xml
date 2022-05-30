@@ -14,6 +14,7 @@
         android:textColor="@color/cornflower_blue"
         android:textSize="32sp"
         android:textStyle="bold"
+        android:text="@string/intro_tab_title"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Intro" />
 
@@ -21,8 +22,9 @@
         android:id="@+id/fcv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:paddingVertical="16dp"
         app:layout_constraintBottom_toTopOf="@id/bnv"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tv_main_title" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bnv"

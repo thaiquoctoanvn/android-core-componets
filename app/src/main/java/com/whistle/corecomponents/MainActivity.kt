@@ -23,13 +23,11 @@ class MainActivity : AppCompatActivity() {
             navGraphIds = navGraphIds,
             fragmentManager = supportFragmentManager,
             containerId = R.id.fcv,
-            intent = intent
+            intent = intent,
+            onNavMenuClickListener = {
+                setMainTitle(it.title.toString())
+            }
         )
-
-        binding?.bnv?.setOnItemSelectedListener {
-            setMainTitle(it.title.toString())
-            return@setOnItemSelectedListener true
-        }
     }
 
     fun setMainTitle(title: String) {
