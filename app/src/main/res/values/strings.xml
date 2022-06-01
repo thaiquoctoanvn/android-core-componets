@@ -5,4 +5,6 @@
     <string name="profile_tab_title">Profile</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_description">Hi, this component have some special operation that is relevant to its name. Let\'s see what it is</string>
+    <string name="work_manager_instruction">I have 2 sample of work manager here\nWith one-time work sample, just click the relevant button and worker will download an image after 10s of delay\nFor periodic work, my worker is going to send a notification once each 15 mins</string>
 </resources>

@@ -47,4 +47,16 @@ dependencies {
 
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
+
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+    // Load image
+    implementation 'com.facebook.fresco:fresco:2.6.0'
+    // New add fragment method
+    def fragment_version = "1.4.1"
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+    // Work manager
+    def work_version = "2.7.1"
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+    //
+    implementation 'com.airbnb.android:lottie:5.0.3'
 }
