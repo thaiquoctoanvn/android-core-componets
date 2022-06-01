@@ -9,5 +9,13 @@
         android:id="@+id/categoryFragment"
         android:name="com.whistle.corecomponents.category.CategoryFragment"
         android:label="fragment_category"
-        tools:layout="@layout/fragment_category" />
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_workManagerFragment"
+            app:destination="@id/workManagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workManagerFragment"
+        android:name="com.whistle.corecomponents.category.workmanager.WorkManagerFragment"
+        android:label="WorkManagerFragment" />
 </navigation>

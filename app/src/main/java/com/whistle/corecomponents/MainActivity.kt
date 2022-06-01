@@ -1,6 +1,8 @@
 package com.whistle.corecomponents
 
 import android.os.Bundle
+import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.whistle.corecomponents.databinding.ActivityMainBinding
 
@@ -30,7 +32,16 @@ class MainActivity : AppCompatActivity() {
         )
     }
 
-    fun setMainTitle(title: String) {
-        binding?.tvMainTitle?.text = title
+    fun setMainTitle(title: String, isCategoryTab: Boolean = false) {
+        if (isCategoryTab) {
+            binding?.tvMainSubTitle?.apply {
+                visibility = View.VISIBLE
+                text = title
+            }
+        }
+        else {
+            binding?.tvMainTitle?.text = title
+            binding?.tvMainSubTitle?.visibility = View.GONE
+        }
     }
 }

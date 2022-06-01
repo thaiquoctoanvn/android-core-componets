@@ -2,6 +2,7 @@ package com.whistle.corecomponents.category
 
 import android.os.Bundle
 import android.view.View
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.whistle.corecomponents.BaseFragment
 import com.whistle.corecomponents.R
@@ -15,6 +16,10 @@ class CategoryFragment : BaseFragment<FragmentCategoryBinding>(FragmentCategoryB
         binding.rvCategory.apply {
             adapter = componentCategoryAdapter
             layoutManager = LinearLayoutManager(requireActivity())
+        }
+
+        componentCategoryAdapter.setOnItemClickListener {  adapter, view, position ->
+            findNavController().navigate(R.id.action_categoryFragment_to_workManagerFragment)
         }
     }
 }

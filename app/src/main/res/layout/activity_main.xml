@@ -8,15 +8,30 @@
 
     <TextView
         android:id="@+id/tv_main_title"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="16dp"
+        android:paddingVertical="16dp"
+        android:paddingStart="16dp"
+        android:text="@string/intro_tab_title"
         android:textColor="@color/cornflower_blue"
         android:textSize="32sp"
         android:textStyle="bold"
-        android:text="@string/intro_tab_title"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Intro" />
+
+    <TextView
+        android:id="@+id/tv_main_sub_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_main_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_main_title"
+        tools:text="@string/intro_tab_title" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fcv"
