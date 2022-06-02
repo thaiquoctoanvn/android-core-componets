@@ -6,5 +6,6 @@ data class ComponentModel(
     val id: Int,
     val iconRes: Int = R.drawable.ic_baseline_album_24,
     val name: String,
-    val description: String = ""
+    val description: String = "",
+    val destination: String
 )

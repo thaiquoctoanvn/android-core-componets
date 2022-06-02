@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/white">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHorizontalRoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <View
+        android:id="@+id/vVerticalRootLine"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/cornflower_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vHorizontalRootLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+
+        android:background="@color/cornflower_blue"
+        app:layout_constraintStart_toEndOf="@id/vVerticalRootLine"
+        app:layout_constraintTop_toTopOf="@id/glHorizontalRoot"
+        app:layout_constraintWidth_percent="0.05" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvAuthorImageSecondNode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="0dp"
+
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@id/vHorizontalRootLine"
+        app:layout_constraintTop_toTopOf="@id/vHorizontalRootLine"
+        app:layout_constraintWidth_percent="0.1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_duck" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_round_corner"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cvAuthorImageSecondNode"
+        app:layout_constraintTop_toTopOf="@id/cvAuthorImageSecondNode"
+        app:layout_constraintVertical_bias="0">
+
+        <TextView
+            android:id="@+id/tvAuthorSecondNode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Steve" />
+
+        <TextView
+            android:id="@+id/tvCommentContentSecondNode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="This is long long long long long long long long long long long long long long long long long long long long long text" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vSecondVerticalLine"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/cornflower_blue"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/cvAuthorImageSecondNode"
+        app:layout_constraintStart_toStartOf="@id/cvAuthorImageSecondNode"
+        app:layout_constraintTop_toBottomOf="@id/cvAuthorImageSecondNode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
