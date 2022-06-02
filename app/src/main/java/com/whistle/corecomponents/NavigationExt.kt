@@ -1,15 +1,19 @@
 package com.whistle.corecomponents
 
+import android.content.Context
 import android.content.Intent
 import android.util.SparseArray
 import android.view.MenuItem
 import androidx.core.util.forEach
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.whistle.corecomponents.category.canvas.TreeNodeRecyclerViewFragment
+import com.whistle.corecomponents.category.workmanager.WorkManagerFragment
 
 fun BottomNavigationView.setUpWithNavController(
     navGraphIds: List<Int>,
@@ -192,4 +196,12 @@ private fun FragmentManager.isOnBackStack(backStackName: String): Boolean {
         }
     }
     return false
+}
+
+fun getNavDestination(identifier: Fragment): Int {
+    return when (identifier) {
+        is TreeNodeRecyclerViewFragment -> R.id.action_categoryFragment_to_treeNodeRecyclerViewFragment
+        is WorkManagerFragment -> R.id.action_categoryFragment_to_workManagerFragment
+        else -> -1
+    }
 }
