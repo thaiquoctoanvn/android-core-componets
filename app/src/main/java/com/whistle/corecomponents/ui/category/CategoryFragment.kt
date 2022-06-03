@@ -1,4 +1,4 @@
-package com.whistle.corecomponents.category
+package com.whistle.corecomponents.ui.category
 
 import android.os.Bundle
 import android.view.View
@@ -27,7 +27,7 @@ class CategoryFragment : BaseFragment<FragmentCategoryBinding>(FragmentCategoryB
 
     private fun getNavActionByDestination(des: String) = when (des) {
         NavDes.WORK_MANAGER_SAMPLE.name -> R.id.action_categoryFragment_to_workManagerFragment
-        NavDes.IMAGE_LABELING_SAMPLE.name -> 0
+        NavDes.IMAGE_LABELING_SAMPLE.name -> R.id.action_categoryFragment_to_cameraFragment
         NavDes.TREE_NODE_RECYCLER_VIEW_SAMPLE.name -> R.id.action_categoryFragment_to_treeNodeRecyclerViewFragment
         else -> -1
     }

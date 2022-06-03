@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/categoryFragment"
-        android:name="com.whistle.corecomponents.category.CategoryFragment"
+        android:name="com.whistle.corecomponents.ui.category.CategoryFragment"
         android:label="fragment_category"
         tools:layout="@layout/fragment_category" >
         <action
@@ -16,14 +16,22 @@
         <action
             android:id="@+id/action_categoryFragment_to_treeNodeRecyclerViewFragment"
             app:destination="@id/treeNodeRecyclerViewFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
     </fragment>
     <fragment
         android:id="@+id/workManagerFragment"
-        android:name="com.whistle.corecomponents.category.workmanager.WorkManagerFragment"
+        android:name="com.whistle.corecomponents.ui.category.workmanager.WorkManagerFragment"
         android:label="WorkManagerFragment" />
     <fragment
         android:id="@+id/treeNodeRecyclerViewFragment"
-        android:name="com.whistle.corecomponents.category.canvas.TreeNodeRecyclerViewFragment"
+        android:name="com.whistle.corecomponents.ui.category.canvas.TreeNodeRecyclerViewFragment"
         android:label="fragment_tree_node_recycler_view"
         tools:layout="@layout/fragment_tree_node_recycler_view" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.whistle.corecomponents.ui.category.cameranvision.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
 </navigation>

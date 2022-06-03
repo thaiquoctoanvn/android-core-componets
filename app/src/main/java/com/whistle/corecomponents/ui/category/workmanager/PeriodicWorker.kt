@@ -1,4 +1,4 @@
-package com.whistle.corecomponents.category.workmanager
+package com.whistle.corecomponents.ui.category.workmanager
 
 import android.content.Context
 import androidx.work.Worker

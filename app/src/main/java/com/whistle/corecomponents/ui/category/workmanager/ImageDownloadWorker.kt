@@ -1,4 +1,4 @@
-package com.whistle.corecomponents.category.workmanager
+package com.whistle.corecomponents.ui.category.workmanager
 
 import android.app.Notification
 import android.app.NotificationChannel

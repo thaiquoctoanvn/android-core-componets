@@ -1,4 +1,4 @@
-package com.whistle.corecomponents.category
+package com.whistle.corecomponents.ui.category
 
 import androidx.annotation.LayoutRes
 import com.chad.library.adapter.base.BaseQuickAdapter

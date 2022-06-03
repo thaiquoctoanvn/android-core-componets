@@ -1,4 +1,4 @@
-package com.whistle.corecomponents.category.canvas
+package com.whistle.corecomponents.ui.category.canvas
 
 import com.chad.library.adapter.base.entity.node.BaseNode
 

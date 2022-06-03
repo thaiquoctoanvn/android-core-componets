@@ -16,4 +16,9 @@
     <color name="london_hue">#CAB4CC</color>
     <color name="golden_glow">#FDE69E</color>
     <color name="cornflower">#91B1E7</color>
+
+    <!--For camera sample-->
+    <color name="icActive">#FFFFFFFF</color>
+    <color name="icFocused">#DDFFFFFF</color>
+    <color name="icPressed">#AAFFFFFF</color>
 </resources>

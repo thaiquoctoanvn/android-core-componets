@@ -1,6 +1,5 @@
 package com.whistle.corecomponents
 
-import android.content.Context
 import android.content.Intent
 import android.util.SparseArray
 import android.view.MenuItem
@@ -12,8 +11,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.whistle.corecomponents.category.canvas.TreeNodeRecyclerViewFragment
-import com.whistle.corecomponents.category.workmanager.WorkManagerFragment
+import com.whistle.corecomponents.ui.category.canvas.TreeNodeRecyclerViewFragment
+import com.whistle.corecomponents.ui.category.workmanager.WorkManagerFragment
 
 fun BottomNavigationView.setUpWithNavController(
     navGraphIds: List<Int>,

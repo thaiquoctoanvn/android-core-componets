@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingVertical="16dp"
-    tools:context=".category.canvas.TreeNodeRecyclerViewFragment">
+    tools:context=".ui.category.canvas.TreeNodeRecyclerViewFragment">
 
     <TextView
         android:layout_width="match_parent"
