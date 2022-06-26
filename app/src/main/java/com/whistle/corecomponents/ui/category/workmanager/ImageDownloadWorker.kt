@@ -34,7 +34,7 @@ class ImageDownloadWorker(
         val notification = NotificationCompat.Builder(applicationContext, "workDownload")
             .setContentTitle("Downloading Your Image")
             .setTicker("Downloading Your Image")
-            .setSmallIcon(R.drawable.duck)
+            .setSmallIcon(R.drawable.ic_crab_launcher_foreground)
             .setOngoing(true)
             .addAction(android.R.drawable.ic_delete, "Cancel Download", intent)
 

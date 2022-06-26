@@ -12,10 +12,10 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_duck"
+        android:icon="@mipmap/ic_crab_launcher"
         android:label="@string/app_name"
         android:name=".MyApplication"
-        android:roundIcon="@mipmap/ic_duck_round"
+        android:roundIcon="@mipmap/ic_crab_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoreComponents"
         tools:targetApi="31">

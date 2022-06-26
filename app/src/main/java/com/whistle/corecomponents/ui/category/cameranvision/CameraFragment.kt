@@ -275,7 +275,7 @@ class CameraFragment : BaseFragment<FragmentCameraBinding>(FragmentCameraBinding
 
                 bindCameraUseCase()
             }
-            binding.pvCamera.implementationMode = PreviewView.ImplementationMode.COMPATIBLE
+            //binding.pvCamera.implementationMode = PreviewView.ImplementationMode.COMPATIBLE
             setUpCamera()
         }
     }
