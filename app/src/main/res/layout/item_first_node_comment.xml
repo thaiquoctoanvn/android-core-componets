@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvAuthorImageFirstNode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_corner"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cvAuthorImageFirstNode"
+        app:layout_constraintTop_toTopOf="@id/cvAuthorImageFirstNode">
+
+        <TextView
+            android:id="@+id/tvAuthorFirstNode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Steve" />
+
+        <TextView
+            android:id="@+id/tvCommentContentFirstNode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="This is long long long long long long long long long long long long long long long long long long long long long text" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vVerticalRootNode"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/cornflower_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/cvAuthorImageFirstNode"
+        app:layout_constraintStart_toStartOf="@id/cvAuthorImageFirstNode"
+        app:layout_constraintTop_toBottomOf="@id/cvAuthorImageFirstNode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

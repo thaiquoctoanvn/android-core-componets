@@ -17,7 +17,7 @@ fun createNotification(
     id: Int = Random.nextInt(1000)
 ): Notification {
     val builder = NotificationCompat.Builder(context, "CHANNEL_ID")
-        .setSmallIcon(R.drawable.duck)
+        .setSmallIcon(R.drawable.ic_crab_launcher_foreground)
         .setContentTitle(title)
         .setContentText(content)
         .setPriority(NotificationCompat.PRIORITY_DEFAULT)
